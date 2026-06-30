@@ -1,1 +1,163 @@
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f8f8f8;
+color:#222;
+}
+
+header{
+background:#000;
+color:#fff;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 8%;
+position:sticky;
+top:0;
+z-index:999;
+}
+
+.logo h2{
+color:#FFD700;
+}
+
+nav a{
+color:#fff;
+text-decoration:none;
+margin-left:20px;
+transition:.3s;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#FFD700;
+}
+
+.hero{
+background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),url("https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
+background-position:center;
+height:85vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:#fff;
+padding:20px;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:30px;
+max-width:700px;
+}
+
+.btn,.btn2{
+padding:14px 30px;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+margin:10px;
+display:inline-block;
+transition:.3s;
+}
+
+.btn{
+background:#FFD700;
+color:#000;
+}
+
+.btn:hover{
+background:#fff;
+}
+
+.btn2{
+background:#25D366;
+color:#fff;
+}
+
+.btn2:hover{
+background:#128C7E;
+}
+
+.services{
+padding:80px 8%;
+text-align:center;
+}
+
+.services h2{
+font-size:36px;
+margin-bottom:40px;
+}
+
+.card{
+background:#fff;
+padding:25px;
+margin:15px;
+display:inline-block;
+width:280px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+transition:.4s;
+font-size:20px;
+font-weight:bold;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 15px 35px rgba(0,0,0,.25);
+}
+
+footer{
+background:#000;
+color:#fff;
+text-align:center;
+padding:40px 20px;
+margin-top:60px;
+}
+
+footer h3{
+color:#FFD700;
+margin-bottom:10px;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+}
+
+nav{
+margin-top:15px;
+}
+
+nav a{
+display:block;
+margin:12px 0;
+}
+
+.hero h1{
+font-size:34px;
+}
+
+.hero p{
+font-size:17px;
+}
+
+.card{
+width:100%;
+}
+
+}
